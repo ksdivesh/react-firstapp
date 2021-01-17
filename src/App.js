@@ -5,24 +5,44 @@ import FirstFunctionComponent, { MyFirstComponent } from "./components/FirstFunc
 import { MultOne, MultTwo } from './components/MultipleComponents';
 import FormClassComponent from "./components/FormClassComponent";
 import FormFunctionComponent from "./components/FormFunctionComponent";
+import TestLifeCycle from "./components/LifeCycle/TestLifeCycle";
+import LifeCycleMethod from "./components/LifeCycle/LifeCycleMethod";
+import LifeCycleMethodFunc from "./components/LifeCycle/LifeCycleMethodFunc";
+import ParentClassComp from "./components/DataShare/ParentClassComp";
+import ParentFuncComp from "./components/DataShare/ParentFuncComp";
+import RouteDev from "./RouteDev";
+import "./App.css";
+
 
 function App() {
 
-  let name = "Userasdfasdfasdf";
-
-  let students = [
-    { id: 1, name: "Divesh" },
-    { id: 2, name: "Parvej" },
-    { id: 3, name: "Parasdfsadf" },
-    { id: 4, name: "sdfasdfsafd" }
-  ];
 
 
 
 
   return (
     <>
-      <h1>Parent Compoen</h1>
+
+
+
+      <RouteDev />
+
+
+      {/* <ParentClassComp />
+
+      <ParentFuncComp /> */}
+
+
+      {/* <TestLifeCycle />  */}
+
+      {/* <LifeCycleMethod /> */}
+      {/* <LifeCycleMethodFunc /> */}
+
+
+      {/* <h1>Parent Compoen</h1> */}
+
+
+
       {/* <MyFirstComponent /> */}
       {/* <FirstComponent />
       <FirstFunctionComponent />
@@ -33,7 +53,7 @@ function App() {
 
       {/* <FormClassComponent studentName={name} studentRollNumber="TETST12121" /> */}
 
-      <FormFunctionComponent studentName={name} studentRollNumber={`ssssssssssss`} />
+      {/* <FormFunctionComponent studentName={name} studentRollNumber={`ssssssssssss`} /> */}
 
       {/* <MyComponent />
       <MyComponent />
