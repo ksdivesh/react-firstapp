@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
+import PostForm from './pages/PostForm';
+import PostInfo from './pages/PostInfo';
 
 function RouteDev() {
     return (
@@ -18,6 +20,8 @@ function RouteDev() {
                     <Route exact={true} path="/about" component={About} />
                     <Route exact={true} path="/service" component={Service} />
                     <Route exact={true} path="/contact" component={Contact} />
+                    <Route exact={true} path="/posts/create" component={PostForm} />
+                    <Route exact={true} path="/posts/detail/:id" component={PostInfo} />
 
 
                 </Switch>

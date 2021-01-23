@@ -15,7 +15,11 @@ function About() {
         <>
             <HeaderComponent />
 
-            This is about page
+            <div className="content-body">
+                This is about page
+            </div>
+
+
             <FooterComponent />
 
         </>
