@@ -12,21 +12,23 @@ import ParentClassComp from "./components/DataShare/ParentClassComp";
 import ParentFuncComp from "./components/DataShare/ParentFuncComp";
 import RouteDev from "./RouteDev";
 import "./App.css";
+import ThemeContext from "./context/ThemeContext";
+
+
 
 
 function App() {
 
 
 
-
-
   return (
     <>
-
-
-
-      <RouteDev />
-
+      <ThemeContext.Provider value={{
+        name: "Divesh",
+        rollNo: "24"
+      }}>
+        <RouteDev />
+      </ThemeContext.Provider>
 
       {/* <ParentClassComp />
 
